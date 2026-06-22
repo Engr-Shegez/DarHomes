@@ -3,6 +3,7 @@ import { FeaturedListings } from "../components/home/FeaturedListings";
 import { Hero } from "../components/home/Hero";
 import { ProcessSection } from "../components/home/ProcessSection";
 import { SellerBuilderCTA } from "../components/home/SellerBuilderCTA";
+import { TestimonialsSection } from "../components/home/TestimonialsSection";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <FeaturedListings />
       <ProcessSection />
       <SellerBuilderCTA />
+      <TestimonialsSection />
     </main>
   );
 }
