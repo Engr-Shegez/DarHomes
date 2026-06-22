@@ -1,4 +1,5 @@
 import { BusinessPillars } from "../components/home/BusinessPillars";
+import { FeaturedListings } from "../components/home/FeaturedListings";
 import { Hero } from "../components/home/Hero";
 
 export default function Home() {
@@ -6,6 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <BusinessPillars />
+      <FeaturedListings />
     </main>
   );
 }
