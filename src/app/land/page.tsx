@@ -1,4 +1,6 @@
 import { PageHeader } from "@/src/components/layout/PageHeader";
+import { ListingGrid } from "@/src/components/listings/ListingGrid";
+import { listings } from "@/src/lib/Listing";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +17,7 @@ export default function LandPage() {
         title="Secure your foundation in the right location."
         description="Explore land opportunities with support around location, documentation, inspection, and long-term value."
       />
+      <ListingGrid listings={listings} type="Land" />
     </main>
   );
 }

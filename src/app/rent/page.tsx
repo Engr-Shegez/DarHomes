@@ -1,4 +1,6 @@
 import { PageHeader } from "@/src/components/layout/PageHeader";
+import { ListingGrid } from "@/src/components/listings/ListingGrid";
+import { listings } from "@/src/lib/Listing";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +17,7 @@ export default function RentPage() {
         title="Curated stays for business trips, weekends, and longer escapes."
         description="Explore rentals and short-term stays selected for comfort, location, and a smoother guest experience."
       />
+      <ListingGrid listings={listings} type="Rent" />
     </main>
   );
 }
