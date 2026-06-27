@@ -1,4 +1,5 @@
 import { BusinessPillars } from "../components/home/BusinessPillars";
+import { FAQSection } from "../components/home/FAQSection";
 import { FeaturedListings } from "../components/home/FeaturedListings";
 import { Hero } from "../components/home/Hero";
 import { ProcessSection } from "../components/home/ProcessSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <ProcessSection />
       <SellerBuilderCTA />
       <TestimonialsSection />
+      <FAQSection />
     </main>
   );
 }
