@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Manrope } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "../components/layout/Navbar";
 import { Footer } from "../components/layout/Footer";
+import { siteConfig } from "../lib/seo";
 
 const display = Cormorant_Garamond({
   subsets: ["latin"],
@@ -38,7 +39,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     siteName: "Darhomes Realty",
+    url: siteConfig.url,
   },
+  metadataBase: new URL(siteConfig.url),
 };
 
 export default function RootLayout({
